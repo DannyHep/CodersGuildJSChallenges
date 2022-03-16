@@ -190,46 +190,60 @@ for (let i = 0; i < readingList.length; i++) {
 }
 
 // Recipe
-let favRecipe = 
-  {
-    recipeTitle: "Hairy Biker's Chicken Korma",
-    servings: 2,
-    ingredients: [
-      "Onion",
-      "Chilli Powder",
-      "Chicken",
-      "Natural Yoghurt",
-      "Cumin",
-      "Turmeric",
-      "Coriander",
-      "Cardamon pods",
-      "garlic",
-      "cloves",
-      "Bay leaf",
-      "cream",
-    ],
-    directions:
-      "slice onions, and cook on medium heat. One cooked, add spice mix prepared in a mortar and pestle. Add cream and season for taste.",
-    letsCook: function() {
-      console.log(`I'm hungry!Let's cook ${this.recipeTitle}`)
-    }
-  };
+let favRecipe = {
+  recipeTitle: "Hairy Biker's Chicken Korma",
+  servings: 2,
+  ingredients: [
+    "Onion",
+    "Chilli Powder",
+    "Chicken",
+    "Natural Yoghurt",
+    "Cumin",
+    "Turmeric",
+    "Coriander",
+    "Cardamon pods",
+    "garlic",
+    "cloves",
+    "Bay leaf",
+    "cream",
+  ],
+  directions:
+    "slice onions, and cook on medium heat. One cooked, add spice mix prepared in a mortar and pestle. Add cream and season for taste.",
+  letsCook: function () {
+    console.log(`I'm hungry!Let's cook ${this.recipeTitle}`);
+  },
+};
 
 function recipeIngredientList() {
   for (let i = 0; i < favRecipe.ingredients.length; i++) {
-    console.log(favRecipe.ingredients[i])
+    console.log(favRecipe.ingredients[i]);
   }
 }
 
 recipeIngredientList();
 
-
 // Function
 favRecipe.letsCook();
 
-
 // Times Tables
-for (let i = 0; i < 13; i++){
-  console.log(9 * i)
-};
+for (let i = 0; i < 13; i++) {
+  console.log(9 * i);
+}
 
+// Top Choice
+const topChoices = [
+  "Euro fighter typhoon",
+  "Hawk t1",
+  "Mirage 2000",
+  "Tornado F3",
+  "Tornado Gr4",
+  "F35 Lightning 2",
+];
+
+function choice() {
+  topChoices.map((i) => {
+    console.log(`My #1 choice is ${i}`);
+  });
+}
+
+console.log();
